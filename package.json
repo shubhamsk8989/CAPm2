@@ -1,0 +1,24 @@
+{
+  "name": "CAP_3",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^9"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-salesorder": "cds watch --open managesalesorder.salesorder/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/salesorder"
+  ]
+}
