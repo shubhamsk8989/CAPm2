@@ -5,8 +5,8 @@ using { shubham.common } from './common';
 
 
 context master {
-    entity SalesOrders{
-        key soNumber: String;
+    entity SalesOrders : cuid{
+        // key soNumber: String;
         orderDate: Date;
         customerName: localized String;
         customerNumber: String;
@@ -16,7 +16,7 @@ context master {
         Note: String(256);
         status: String;
 
-        Items:Composition of many SalesOrderItems on Items.soNumber= soNumber;
+        Items:Composition of many SalesOrderItems on Items.soID= ID;
     }
 
     annotate SalesOrders {
@@ -24,14 +24,14 @@ context master {
         customerNumber @title: '{i18n>CustomerNumber}';
     }
 
-    entity SalesOrderItems{
-        key itemId: String;
-        soNumber: String;
+    entity SalesOrderItems : cuid{
+        // key itemId: String;
+        soID: UUID;
         productId: String;
         quantity: Integer;
         price: Decimal(10, 2);
 
-        Parent: Association to SalesOrders on Parent.soNumber= soNumber;
+        Parent: Association to SalesOrders on Parent.ID= soID;
     }
 
     entity customer : cuid, managed, temporal {

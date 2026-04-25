@@ -1,203 +1,203 @@
-locale,soNumber,customerName
-en,SO-1001,TechNova Solutions
-de,SO-1001,TechNova Solutions GmbH
-en,SO-1002,Global Industries
-en,SO-1003,Apex Corp
-en,SO-1004,Zenith Logistics
-en,SO-1005,Quantum Dynamics
-en,SO-1006,TechNova Solutions
-en,SO-1007,Nexus Health
-en,SO-1008,Global Industries
-en,SO-1009,Starlight Ventures
-en,SO-1010,Apex Corp
-en,SO-1011,Pioneer Manufacturing
-en,SO-1012,Zenith Logistics
-en,SO-1013,Silverline Retail
-en,SO-1014,Quantum Dynamics
-en,SO-1015,BlueWave Energy
-en,SO-1016,TechNova Solutions
-en,SO-1017,Nexus Health
-en,SO-1018,Global Industries
-en,SO-1019,Starlight Ventures
-en,SO-1020,Apex Corp
-en,SO-1021,Pioneer Manufacturing
-en,SO-1022,Zenith Logistics
-en,SO-1023,Silverline Retail
-en,SO-1024,Quantum Dynamics
-en,SO-1025,BlueWave Energy
-en,SO-1026,TechNova Solutions
-en,SO-1027,Nexus Health
-en,SO-1028,Global Industries
-en,SO-1029,Starlight Ventures
-en,SO-1030,Apex Corp
-en,SO-1031,Pioneer Manufacturing
-en,SO-1032,Zenith Logistics
-en,SO-1033,Silverline Retail
-en,SO-1034,Quantum Dynamics
-en,SO-1035,BlueWave Energy
-en,SO-1036,TechNova Solutions
-en,SO-1037,Nexus Health
-en,SO-1038,Global Industries
-en,SO-1039,Starlight Ventures
-en,SO-1040,Apex Corp
-en,SO-1041,Pioneer Manufacturing
-en,SO-1042,Zenith Logistics
-en,SO-1043,Silverline Retail
-en,SO-1044,Quantum Dynamics
-en,SO-1045,BlueWave Energy
-en,SO-1046,TechNova Solutions
-en,SO-1047,Nexus Health
-en,SO-1048,Global Industries
-en,SO-1049,Starlight Ventures
-en,SO-1050,Apex Corp
-en,SO-1051,Pioneer Manufacturing
-en,SO-1052,Zenith Logistics
-en,SO-1053,Silverline Retail
-en,SO-1054,Quantum Dynamics
-en,SO-1055,BlueWave Energy
-en,SO-1056,TechNova Solutions
-en,SO-1057,Nexus Health
-en,SO-1058,Global Industries
-en,SO-1059,Starlight Ventures
-en,SO-1060,Apex Corp
-en,SO-1061,Pioneer Manufacturing
-en,SO-1062,Zenith Logistics
-en,SO-1063,Silverline Retail
-en,SO-1064,Quantum Dynamics
-en,SO-1065,BlueWave Energy
-en,SO-1066,TechNova Solutions
-en,SO-1067,Nexus Health
-en,SO-1068,Global Industries
-en,SO-1069,Starlight Ventures
-en,SO-1070,Apex Corp
-en,SO-1071,Pioneer Manufacturing
-en,SO-1072,Zenith Logistics
-en,SO-1073,Silverline Retail
-en,SO-1074,Quantum Dynamics
-en,SO-1075,BlueWave Energy
-en,SO-1076,TechNova Solutions
-en,SO-1077,Nexus Health
-en,SO-1078,Global Industries
-en,SO-1079,Starlight Ventures
-en,SO-1080,Apex Corp
-en,SO-1081,Pioneer Manufacturing
-en,SO-1082,Zenith Logistics
-en,SO-1083,Silverline Retail
-en,SO-1084,Quantum Dynamics
-en,SO-1085,BlueWave Energy
-en,SO-1086,TechNova Solutions
-en,SO-1087,Nexus Health
-en,SO-1088,Global Industries
-en,SO-1089,Starlight Ventures
-en,SO-1090,Apex Corp
-en,SO-1091,Pioneer Manufacturing
-en,SO-1092,Zenith Logistics
-en,SO-1093,Silverline Retail
-en,SO-1094,Quantum Dynamics
-en,SO-1095,BlueWave Energy
-en,SO-1096,TechNova Solutions
-en,SO-1097,Nexus Health
-en,SO-1098,Global Industries
-en,SO-1099,Starlight Ventures
-en,SO-1100,Apex Corp
-en,SO-1101,Pioneer Manufacturing
-de,SO-1002,Global Industries AG
-de,SO-1003,Apex Corp GmbH
-de,SO-1004,Zenith Logistics AG
-de,SO-1005,Quantum Dynamics GmbH
-de,SO-1006,TechNova Solutions GmbH
-de,SO-1007,Nexus Health AG
-de,SO-1008,Global Industries AG
-de,SO-1009,Starlight Ventures GmbH
-de,SO-1010,Apex Corp GmbH
-de,SO-1011,Pioneer Manufacturing AG
-de,SO-1012,Zenith Logistics AG
-de,SO-1013,Silverline Retail GmbH
-de,SO-1014,Quantum Dynamics GmbH
-de,SO-1015,BlueWave Energy AG
-de,SO-1016,TechNova Solutions GmbH
-de,SO-1017,Nexus Health AG
-de,SO-1018,Global Industries AG
-de,SO-1019,Starlight Ventures GmbH
-de,SO-1020,Apex Corp GmbH
-de,SO-1021,Pioneer Manufacturing AG
-de,SO-1022,Zenith Logistics AG
-de,SO-1023,Silverline Retail GmbH
-de,SO-1024,Quantum Dynamics GmbH
-de,SO-1025,BlueWave Energy AG
-de,SO-1026,TechNova Solutions GmbH
-de,SO-1027,Nexus Health AG
-de,SO-1028,Global Industries AG
-de,SO-1029,Starlight Ventures GmbH
-de,SO-1030,Apex Corp GmbH
-de,SO-1031,Pioneer Manufacturing AG
-de,SO-1032,Zenith Logistics AG
-de,SO-1033,Silverline Retail GmbH
-de,SO-1034,Quantum Dynamics GmbH
-de,SO-1035,BlueWave Energy AG
-de,SO-1036,TechNova Solutions GmbH
-de,SO-1037,Nexus Health AG
-de,SO-1038,Global Industries AG
-de,SO-1039,Starlight Ventures GmbH
-de,SO-1040,Apex Corp GmbH
-de,SO-1041,Pioneer Manufacturing AG
-de,SO-1042,Zenith Logistics AG
-de,SO-1043,Silverline Retail GmbH
-de,SO-1044,Quantum Dynamics GmbH
-de,SO-1045,BlueWave Energy AG
-de,SO-1046,TechNova Solutions GmbH
-de,SO-1047,Nexus Health AG
-de,SO-1048,Global Industries AG
-de,SO-1049,Starlight Ventures GmbH
-de,SO-1050,Apex Corp GmbH
-de,SO-1051,Pioneer Manufacturing AG
-de,SO-1052,Zenith Logistics AG
-de,SO-1053,Silverline Retail GmbH
-de,SO-1054,Quantum Dynamics GmbH
-de,SO-1055,BlueWave Energy AG
-de,SO-1056,TechNova Solutions GmbH
-de,SO-1057,Nexus Health AG
-de,SO-1058,Global Industries AG
-de,SO-1059,Starlight Ventures GmbH
-de,SO-1060,Apex Corp GmbH
-de,SO-1061,Pioneer Manufacturing AG
-de,SO-1062,Zenith Logistics AG
-de,SO-1063,Silverline Retail GmbH
-de,SO-1064,Quantum Dynamics GmbH
-de,SO-1065,BlueWave Energy AG
-de,SO-1066,TechNova Solutions GmbH
-de,SO-1067,Nexus Health AG
-de,SO-1068,Global Industries AG
-de,SO-1069,Starlight Ventures GmbH
-de,SO-1070,Apex Corp GmbH
-de,SO-1071,Pioneer Manufacturing AG
-de,SO-1072,Zenith Logistics AG
-de,SO-1073,Silverline Retail GmbH
-de,SO-1074,Quantum Dynamics GmbH
-de,SO-1075,BlueWave Energy AG
-de,SO-1076,TechNova Solutions GmbH
-de,SO-1077,Nexus Health AG
-de,SO-1078,Global Industries AG
-de,SO-1079,Starlight Ventures GmbH
-de,SO-1080,Apex Corp GmbH
-de,SO-1081,Pioneer Manufacturing AG
-de,SO-1082,Zenith Logistics AG
-de,SO-1083,Silverline Retail GmbH
-de,SO-1084,Quantum Dynamics GmbH
-de,SO-1085,BlueWave Energy AG
-de,SO-1086,TechNova Solutions GmbH
-de,SO-1087,Nexus Health AG
-de,SO-1088,Global Industries AG
-de,SO-1089,Starlight Ventures GmbH
-de,SO-1090,Apex Corp GmbH
-de,SO-1091,Pioneer Manufacturing AG
-de,SO-1092,Zenith Logistics AG
-de,SO-1093,Silverline Retail GmbH
-de,SO-1094,Quantum Dynamics GmbH
-de,SO-1095,BlueWave Energy AG
-de,SO-1096,TechNova Solutions GmbH
-de,SO-1097,Nexus Health AG
-de,SO-1098,Global Industries AG
-de,SO-1099,Starlight Ventures GmbH
-de,SO-1100,Apex Corp GmbH
-de,SO-1101,Pioneer Manufacturing AG
+locale,ID,customerName
+en,a0000000-0000-0000-0000-000000001001,TechNova Solutions
+de,a0000000-0000-0000-0000-000000001001,TechNova Solutions GmbH
+en,a0000000-0000-0000-0000-000000001002,Global Industries
+en,a0000000-0000-0000-0000-000000001003,Apex Corp
+en,a0000000-0000-0000-0000-000000001004,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001005,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001006,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001007,Nexus Health
+en,a0000000-0000-0000-0000-000000001008,Global Industries
+en,a0000000-0000-0000-0000-000000001009,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001010,Apex Corp
+en,a0000000-0000-0000-0000-000000001011,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001012,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001013,Silverline Retail
+en,a0000000-0000-0000-0000-000000001014,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001015,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001016,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001017,Nexus Health
+en,a0000000-0000-0000-0000-000000001018,Global Industries
+en,a0000000-0000-0000-0000-000000001019,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001020,Apex Corp
+en,a0000000-0000-0000-0000-000000001021,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001022,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001023,Silverline Retail
+en,a0000000-0000-0000-0000-000000001024,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001025,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001026,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001027,Nexus Health
+en,a0000000-0000-0000-0000-000000001028,Global Industries
+en,a0000000-0000-0000-0000-000000001029,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001030,Apex Corp
+en,a0000000-0000-0000-0000-000000001031,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001032,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001033,Silverline Retail
+en,a0000000-0000-0000-0000-000000001034,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001035,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001036,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001037,Nexus Health
+en,a0000000-0000-0000-0000-000000001038,Global Industries
+en,a0000000-0000-0000-0000-000000001039,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001040,Apex Corp
+en,a0000000-0000-0000-0000-000000001041,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001042,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001043,Silverline Retail
+en,a0000000-0000-0000-0000-000000001044,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001045,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001046,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001047,Nexus Health
+en,a0000000-0000-0000-0000-000000001048,Global Industries
+en,a0000000-0000-0000-0000-000000001049,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001050,Apex Corp
+en,a0000000-0000-0000-0000-000000001051,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001052,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001053,Silverline Retail
+en,a0000000-0000-0000-0000-000000001054,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001055,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001056,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001057,Nexus Health
+en,a0000000-0000-0000-0000-000000001058,Global Industries
+en,a0000000-0000-0000-0000-000000001059,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001060,Apex Corp
+en,a0000000-0000-0000-0000-000000001061,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001062,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001063,Silverline Retail
+en,a0000000-0000-0000-0000-000000001064,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001065,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001066,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001067,Nexus Health
+en,a0000000-0000-0000-0000-000000001068,Global Industries
+en,a0000000-0000-0000-0000-000000001069,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001070,Apex Corp
+en,a0000000-0000-0000-0000-000000001071,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001072,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001073,Silverline Retail
+en,a0000000-0000-0000-0000-000000001074,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001075,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001076,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001077,Nexus Health
+en,a0000000-0000-0000-0000-000000001078,Global Industries
+en,a0000000-0000-0000-0000-000000001079,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001080,Apex Corp
+en,a0000000-0000-0000-0000-000000001081,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001082,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001083,Silverline Retail
+en,a0000000-0000-0000-0000-000000001084,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001085,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001086,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001087,Nexus Health
+en,a0000000-0000-0000-0000-000000001088,Global Industries
+en,a0000000-0000-0000-0000-000000001089,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001090,Apex Corp
+en,a0000000-0000-0000-0000-000000001091,Pioneer Manufacturing
+en,a0000000-0000-0000-0000-000000001092,Zenith Logistics
+en,a0000000-0000-0000-0000-000000001093,Silverline Retail
+en,a0000000-0000-0000-0000-000000001094,Quantum Dynamics
+en,a0000000-0000-0000-0000-000000001095,BlueWave Energy
+en,a0000000-0000-0000-0000-000000001096,TechNova Solutions
+en,a0000000-0000-0000-0000-000000001097,Nexus Health
+en,a0000000-0000-0000-0000-000000001098,Global Industries
+en,a0000000-0000-0000-0000-000000001099,Starlight Ventures
+en,a0000000-0000-0000-0000-000000001100,Apex Corp
+en,a0000000-0000-0000-0000-000000001101,Pioneer Manufacturing
+de,a0000000-0000-0000-0000-000000001002,Global Industries AG
+de,a0000000-0000-0000-0000-000000001003,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001004,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001005,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001006,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001007,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001008,Global Industries AG
+de,a0000000-0000-0000-0000-000000001009,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001010,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001011,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001012,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001013,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001014,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001015,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001016,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001017,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001018,Global Industries AG
+de,a0000000-0000-0000-0000-000000001019,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001020,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001021,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001022,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001023,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001024,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001025,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001026,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001027,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001028,Global Industries AG
+de,a0000000-0000-0000-0000-000000001029,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001030,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001031,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001032,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001033,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001034,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001035,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001036,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001037,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001038,Global Industries AG
+de,a0000000-0000-0000-0000-000000001039,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001040,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001041,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001042,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001043,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001044,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001045,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001046,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001047,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001048,Global Industries AG
+de,a0000000-0000-0000-0000-000000001049,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001050,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001051,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001052,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001053,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001054,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001055,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001056,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001057,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001058,Global Industries AG
+de,a0000000-0000-0000-0000-000000001059,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001060,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001061,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001062,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001063,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001064,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001065,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001066,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001067,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001068,Global Industries AG
+de,a0000000-0000-0000-0000-000000001069,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001070,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001071,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001072,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001073,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001074,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001075,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001076,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001077,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001078,Global Industries AG
+de,a0000000-0000-0000-0000-000000001079,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001080,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001081,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001082,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001083,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001084,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001085,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001086,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001087,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001088,Global Industries AG
+de,a0000000-0000-0000-0000-000000001089,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001090,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001091,Pioneer Manufacturing AG
+de,a0000000-0000-0000-0000-000000001092,Zenith Logistics AG
+de,a0000000-0000-0000-0000-000000001093,Silverline Retail GmbH
+de,a0000000-0000-0000-0000-000000001094,Quantum Dynamics GmbH
+de,a0000000-0000-0000-0000-000000001095,BlueWave Energy AG
+de,a0000000-0000-0000-0000-000000001096,TechNova Solutions GmbH
+de,a0000000-0000-0000-0000-000000001097,Nexus Health AG
+de,a0000000-0000-0000-0000-000000001098,Global Industries AG
+de,a0000000-0000-0000-0000-000000001099,Starlight Ventures GmbH
+de,a0000000-0000-0000-0000-000000001100,Apex Corp GmbH
+de,a0000000-0000-0000-0000-000000001101,Pioneer Manufacturing AG

@@ -4,16 +4,16 @@ module.exports = cds.service.impl(async function () {
     this.on('boost', async (req) => {
         try {
             const orderKey = req.params[0];
-            const orderId = orderKey.soNumber; 
+            const orderId = orderKey.ID; 
             console.log(`Attempting to boost Order: ${orderId}`);
-            const currentOrder = await SELECT.one.from(SalesOrders).where({ soNumber: orderId });
+            const currentOrder = await SELECT.one.from(SalesOrders).where({ ID: orderId });
 
             await UPDATE(SalesOrders)
                 .set({ 
                     totalOrderItems: currentOrder.totalOrderItems + 20, 
                     Note: "Boosted!!" 
                 })
-                .where({ soNumber: orderId });
+                .where({ ID: orderId });
 
             return `Success! Order ${orderId} was boosted from ${currentOrder.totalOrderItems} to ${currentOrder.totalOrderItems + 20} items.`;
 

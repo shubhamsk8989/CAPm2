@@ -9,19 +9,19 @@ annotate service.SO with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'soNumber',
-            Value : soNumber,
+            Label : 'soID',
+            Value : ID,
         },
         // {
         //     $Type : 'UI.DataField',
         //     Label : 'orderDate',
         //     Value : orderDate,
         // },
-        // {
-        //     $Type : 'UI.DataField',
-        //     Label : 'customerName',
-        //     Value : customerName,
-        // },
+        {
+            $Type : 'UI.DataField',
+            Label : 'customerName',
+            Value : customerName,
+        },
         // {
         //     $Type : 'UI.DataField',
         //     Label : 'customerNumber',
@@ -63,7 +63,7 @@ annotate service.SO with @(
         TypeNamePlural: 'Sales Orders',
         Title         : {
             $Type: 'UI.DataField',
-            Value: soNumber
+            Value: ID
         },
         Description   : {
             $Type: 'UI.DataField',
@@ -92,8 +92,8 @@ annotate service.SO with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'soNumber',
-                Value : soNumber,
+                Label : 'soID',
+                Value : ID,
             },
             {
                 $Type : 'UI.DataField',
@@ -139,7 +139,8 @@ annotate service.SOItems with @(
     UI.LineItem #GeneratedTable:[
         {
             $Type : 'UI.DataField',
-            Value : itemId
+            Label : 'soID',
+            Value : ID
         },
         {
             $Type : 'UI.DataField',
@@ -161,7 +162,7 @@ annotate service.SOItems with @(
         TypeNamePlural: 'Sales Order Items',
         Title         : {
             $Type: 'UI.DataField',
-            Value: itemId
+            Value: ID
         },
         Description   : {
             $Type: 'UI.DataField',
