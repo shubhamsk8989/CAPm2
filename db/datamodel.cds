@@ -5,18 +5,18 @@ using { shubham.common } from './common';
 
 
 context master {
-    entity SalesOrders : cuid{
-        // key soNumber: String;
+    entity SalesOrders : cuid {
         orderDate: Date;
+        customerNumber: UUID; 
+        customer: Association to customer on customer.ID = customerNumber;
         customerName: localized String;
-        customerNumber: String;
         PoNumber: String;
         inquiryNumber: String;
         totalOrderItems: Integer;
         Note: String(256);
         status: String;
 
-        Items:Composition of many SalesOrderItems on Items.soID= ID;
+        Items: Composition of many SalesOrderItems on Items.soID = ID;
     }
 
     annotate SalesOrders {
@@ -39,9 +39,6 @@ context master {
         email : common.Email;
         phone : common.PhoneNumber;
         gender : common.Gender;
-
     }
-
-
 
 }

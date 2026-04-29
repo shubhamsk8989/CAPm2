@@ -1,3 +1,5 @@
+const cds = require('@sap/cds');
+
 module.exports = cds.service.impl(async function () {
     const { SalesOrders, SO } = this.entities;
 
@@ -30,6 +32,18 @@ module.exports = cds.service.impl(async function () {
         } catch (error) {
             console.error("LargestOrder Action Failed:", error);
             return req.error(500, "Server Error: " + error.message);
+        }
+    });
+});
+
+module.exports = cds.service.impl(async function () {
+    const { SO, Customer } = this.entities;
+
+    this.before('CREATE', SO, async (req) => {
+        const data = req.data;
+        if (data.customerNumber && !data.customerName) {
+            const cust = await SELECT.one(Customer).where({ ID: data.customerNumber });
+            if (cust) data.customerName = cust.name;
         }
     });
 });

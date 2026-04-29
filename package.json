@@ -2,13 +2,16 @@
   "name": "CAP_3",
   "version": "1.0.0",
   "dependencies": {
-    "@sap/cds": "^9"
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9",
+    "hdb": "^2.27.1"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0",
     "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1",
-    "cds-plugin-ui5": "^0.13.0"
+    "sqlite3": "^6.0.1"
   },
   "scripts": {
     "start": "cds-serve",
@@ -20,5 +23,15 @@
   ],
   "sapux": [
     "app/salesorder"
-  ]
+  ],
+  "cds": {
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
+    "requires": {
+      "[production]": {
+        "db": "hana"
+      }
+    }
+  }
 }

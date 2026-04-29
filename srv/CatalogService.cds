@@ -11,6 +11,15 @@ service CatalogService @(path: '/CatalogService'){
     entity SalesOrders as projection on master.SalesOrders;
     entity SalesOrderItems as projection on master.SalesOrderItems;
 
+    @readonly
+    entity Customer as projection on master.customer {
+        ID,
+        name,
+        email,
+        phone,
+        gender
+    };
+
     entity SO @(title: '{i18n>SoNumber}', odata.draft.enabled: true) as
         projection on SalesOrders {
             *,
@@ -24,6 +33,7 @@ service CatalogService @(path: '/CatalogService'){
                 when 'D' then 3
                 when 'B' then 1
                 end as Criticality: Integer,
+            customer : redirected to Customer,
             Items : redirected to SOItems
         }
         actions {
@@ -36,5 +46,4 @@ service CatalogService @(path: '/CatalogService'){
             *,
             Parent : redirected to SO
         }
-
 }
