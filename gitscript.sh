@@ -1,4 +1,3 @@
-# made changes
 git add .
 echo -n "what is this change for? "
 read reply
