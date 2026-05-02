@@ -1,0 +1,16 @@
+{
+  "welcomeFile": "salesorder/webapp/index.html",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "^/salesorder/webapp/(.*)$",
+      "target": "$1",
+      "localDir": "salesorder/webapp/"
+    },
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "destination": "srv-api"
+    }
+  ]
+}
