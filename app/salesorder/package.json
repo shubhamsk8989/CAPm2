@@ -1,5 +1,5 @@
 {
-  "name": "salesorder",
+  "name": "managesalesorder.salesorder",
   "version": "0.0.1",
   "description": "An SAP Fiori application.",
   "keywords": [
@@ -8,9 +8,6 @@
     "sapui5"
   ],
   "main": "webapp/index.html",
-  "dependencies": {
-    "@sap/approuter": "^21.4.0"
-  },
   "devDependencies": {
     "@sap-ux/eslint-plugin-fiori-tools": "^9.0.0",
     "@sap/ux-ui5-tooling": "1",
@@ -18,7 +15,9 @@
     "eslint": "^9"
   },
   "scripts": {
-    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf",
-    "start": "node node_modules/@sap/approuter/approuter.js"
+    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+  },
+  "ui5": {
+    "dependencies": []
   }
 }

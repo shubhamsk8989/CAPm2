@@ -1,5 +1,51 @@
 {
-  "scopes": [],
-  "attributes": [],
-  "role-templates": []
+  "xsappname": "CAP_3",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Viewer",
+      "description": "Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Administrator"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "PoNumber",
+      "description": "PoNumber",
+      "valueType": "string"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Viewer",
+      "description": "Viewer",
+      "attribute-references": [
+        {
+          "name": "PoNumber"
+        }
+      ],
+      "scope-references": [
+        "$XSAPPNAME.Viewer"
+      ]
+    },
+    {
+      "name": "Admin",
+      "description": "Administrator",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ]
+    }
+  ],
+  "role-collection": [
+    {
+      "name": "app_Administrator",
+      "description": "Administrative Access",
+      "role-template-references": [
+        "$XSAPPNAME.Admin"
+      ]
+    }
+  ]
 }

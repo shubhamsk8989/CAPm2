@@ -1,0 +1,131 @@
+GET http://localhost:4004/CatalogService/
+
+###Read Service Metadata
+GET http://localhost:4004/CatalogService/$metadata
+
+###Read all the data from SalesOrders
+GET http://localhost:4004/CatalogService/SalesOrders
+
+###Read top 2 data after skipping 2 data from SalesOrders
+GET http://localhost:4004/CatalogService/SalesOrders?$top=2&$skip=2
+
+###Reading data from SalesOrders with related data from child tables
+GET http://localhost:4004/CatalogService/SalesOrders?$top=2&$expand=Items
+
+###Reading data from CDS View
+GET http://localhost:4004/CDSService/SOWorkList
+
+
+###
+POST http://localhost:4004/CatalogService/SalesOrders
+Content-Type: application/json
+
+{
+  "soNumber": "SO-5003",
+  "orderDate": "2026-04-02",
+  "customerName": "Apex Corp",
+  "customerNumber": "CUST-03",
+  "PoNumber": "PO-9003",
+  "inquiryNumber": "INQ-8003",
+  "totalOrderItems": 20
+}
+
+
+###
+PATCH  http://localhost:4004/CatalogService/SalesOrders/SO-1003
+Content-Type: application/json
+
+{
+  "orderDate": "2026-04-02",
+  "customerName": "Apex Corp",
+  "customerNumber": "CUST-03",
+  "PoNumber": "PO-9003",
+  "inquiryNumber": "INQ-8003",
+  "totalOrderItems": 15
+}
+
+###
+PATCH http://localhost:4004/CatalogService/SalesOrders('SO-1003')
+Content-Type: application/json
+
+{
+  "totalOrderItems": 24
+}
+
+
+###
+GET  http://localhost:4004/CatalogService/SalesOrders('SO-1003')
+Content-Type: application/json
+
+
+### Create Customer with custom handler
+POST http://localhost:4004/myService/InsertCustomerSrv
+Content-Type: application/json
+
+{
+  "ID": "d3b07384-d113-4e4b-9759-df1f822f3cdf",
+  "createdAt": "2026-04-21T10:00:00.000Z",
+  "createdBy": "admin",
+  "modifiedAt": "2026-04-21T10:00:00.000Z",
+  "modifiedBy": "admin",
+  "validFrom": "2026-04-21T10:00:00.000Z",
+  "validTo": "9999-12-31T23:59:59.999Z",
+  "name": "Anjali Desai",
+  "email": "anjali.desai@example.com",
+  "phone": "+919876543251",
+  "gender": "F"
+}
+
+
+### Reading all records using custon handler
+GET http://localhost:4004/myService/ReadCustomerSrv
+
+
+###Updating records using custon handler
+PATCH  http://localhost:4004/myService/UpdateCustomerSrv/550e8400-e29b-41d4-a716-446655440001
+Content-Type: application/json
+
+{
+  "ID": "550e8400-e29b-41d4-a716-446655440001",
+  "name": "Hari Kumar",
+  "email": "hari.kumar@example.com"
+}
+
+###Deleting records using custon handler
+DELETE http://localhost:4004/myService/DeleteCustomerSrv/550e8400-e29b-41d4-a716-446655440001
+Content-Type: application/json
+
+
+
+###GET a random SO
+GET http://localhost:4004/CatalogService/SO?$top=5
+
+###Calling action for the entity
+POST http://localhost:4004/CatalogService/SO('SO-1001')/CatalogService.boost
+Content-Type: application/json
+
+{}
+
+
+###Largest total number of items for the entity
+GET http://localhost:4004/CatalogService/SO('SO-1001')/CatalogService.largestOrder()
+Content-Type: application/json
+
+{}
+
+
+###
+GET  http://localhost:4004/CatalogService/SO('SO-1004')/Items('ITEM-0135')
+Content-Type: application/json 
+
+
+###Read all the data from SalesOrders: Security Testing - call will fail now
+GET http://localhost:4004/CatalogService/SalesOrders
+
+### Admin user - sees all records
+GET http://localhost:4004/CatalogService/SalesOrders/$count
+Authorization: Basic shubham:
+
+### Viewer user - sees only PO-9002 records
+GET http://localhost:4004/CatalogService/SalesOrders
+Authorization: Basic priya:

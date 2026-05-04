@@ -5,8 +5,10 @@
     "@cap-js/hana": "^2",
     "@sap/approuter": "^21.4.0",
     "@sap/cds": "^9",
+    "@sap/xsenv": "^6.2.0",
+    "@sap/xssec": "^4.13.0",
     "hdb": "^2.27.1",
-    "@sap/xssec": "^4"
+    "passport": "^0.7.0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
@@ -27,13 +29,52 @@
     "app/salesorder"
   ],
   "cds": {
-    "hana": {
-      "deploy-format": "hdbtable"
-    },
     "requires": {
-      "[production]": {
-        "db": "hana",
-        "auth": "dummy"
+      "db": {
+        "[development]": {
+          "kind": "sqlite",
+          "credentials": {
+            "url": "shubham.db"
+          }
+        },
+        "[production]": {
+          "kind": "hana"
+        }
+      },
+      "uaa": {
+        "kind": "xsuaa"
+      },
+      "auth": {
+        "[production]": {
+          "strategy": "JWT"
+        },
+        "[development]": {
+          "strategy": "mock",
+          "users": {
+            "shubham": {
+              "roles": [
+                "Admin",
+                "Viewer"
+              ],
+              "userAttributes": {
+                "PoNumber": [
+                  "$UNRESTRICTED"
+                ]
+              }
+            },
+            "priya": {
+              "roles": [
+                "Viewer"
+              ],
+              "userAttributes": {
+                "PoNumber": [
+                  "PO-9002",
+                  "PO-9003"
+                ]
+              }
+            }
+          }
+        }
       }
     }
   }

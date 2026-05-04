@@ -1,6 +1,6 @@
 using { shubham.db.master } from '../db/datamodel';
 
-service CatalogService @(path: '/CatalogService'){
+service CatalogService @(path: '/CatalogService') @(requires: 'authenticated-user') {
 
     @Capabilities: {
         Insertable,
@@ -8,7 +8,18 @@ service CatalogService @(path: '/CatalogService'){
         Updatable,
         Deletable
     }
-    entity SalesOrders as projection on master.SalesOrders;
+    entity SalesOrders @(restrict: [
+        {
+            grant: ['READ'],
+            to: 'Viewer',
+            where: 'PoNumber = $user.PoNumber'
+        },
+        {
+            grant: ['*'],
+            to: 'Admin'
+        }
+    ]) as projection on master.SalesOrders;
+
     entity SalesOrderItems as projection on master.SalesOrderItems;
 
     @readonly
@@ -20,8 +31,21 @@ service CatalogService @(path: '/CatalogService'){
         gender
     };
 
-    entity SO @(title: '{i18n>SoNumber}', odata.draft.enabled: true) as
-        projection on SalesOrders {
+    entity SO @(
+        title: '{i18n>SoNumber}',
+        odata.draft.enabled: true,
+        restrict: [
+            {
+                grant: ['READ'],
+                to: 'Viewer',
+                where: 'PoNumber = $user.PoNumber'
+            },
+            {
+                grant: ['*'],
+                to: 'Admin'
+            }
+        ]
+    ) as projection on SalesOrders {
             *,
             case status
                 when 'N' then 'New'

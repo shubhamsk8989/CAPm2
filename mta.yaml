@@ -35,7 +35,6 @@ modules:
       buildpack: nodejs_buildpack
     requires:
       - name: CAP_3-db
-
   - name: CAP_3-ui
     type: nodejs
     path: app
@@ -51,7 +50,8 @@ modules:
           name: srv-api
           strictSSL: true
           forwardAuthToken: true
-          url: ~{srv-url}
+          url: '~{srv-url}'
+      - name: CAP_3-auth
   - name: CAP_3
     type: approuter.nodejs
     path: app/
@@ -63,15 +63,15 @@ modules:
       - name: srv-api
         group: destinations
         properties:
-          name: srv-api # must be used in xs-app.json as well
-          url: ~{srv-url}
+          name: srv-api
+          url: '~{srv-url}'
           forwardAuthToken: true
       - name: CAP_3-auth
     provides:
       - name: app-api
         properties:
-          app-protocol: ${protocol}
-          app-uri: ${default-uri}
+          app-protocol: '${protocol}'
+          app-uri: '${default-uri}'
 resources:
   - name: CAP_3-db
     type: com.sap.xs.hdi-container
@@ -85,13 +85,13 @@ resources:
       service-plan: application
       path: ./xs-security.json
       config:
-        xsappname: CAP_3-${org}-${space}
+        xsappname: 'CAP_3-${org}-${space}'
         tenant-mode: dedicated
         oauth2-configuration:
           credential-types:
-            - "binding-secret"
-            - "x509"
+            - binding-secret
+            - x509
           redirect-uris:
-            - https://*~{app-api/app-uri}/**
+            - 'https://*~{app-api/app-uri}/**'
     requires:
       - name: app-api
