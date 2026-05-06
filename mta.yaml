@@ -1,6 +1,6 @@
 _schema-version: 3.3.0
 ID: CAP_3
-version: 1.0.0
+version: 1.2.0
 description: A simple CAP project.
 parameters:
   enable-parallel-deployments: true
@@ -10,9 +10,9 @@ build-parameters:
       commands:
         - npm ci
         - npx cds build --production
-        - npm install --production
-        - npx -p @sap/cds-dk cds build --production
+
 modules:
+  # ─── Backend Server ───────────────────────────────────────────────────────────
   - name: CAP_3-srv
     type: nodejs
     path: gen/srv
@@ -28,6 +28,8 @@ modules:
     requires:
       - name: CAP_3-db
       - name: CAP_3-auth
+
+  # ─── HANA DB Deployer ─────────────────────────────────────────────────────────
   - name: CAP_3-db-deployer
     type: hdb
     path: gen/db
@@ -35,26 +37,38 @@ modules:
       buildpack: nodejs_buildpack
     requires:
       - name: CAP_3-db
+
+  # ─── UI App (Fiori) - builds and uploads to HTML5 repo ───────────────────────
   - name: CAP_3-ui
-    type: nodejs
-    path: app
-    parameters:
-      instances: 1
-      buildpack: nodejs_buildpack
+    type: html5
+    path: app/salesorder
     build-parameters:
-      builder: npm-ci
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms: []   # ← do NOT remove this line
+
+  # ─── HTML5 App Deployer - uploads built UI to HTML5 repo service ──────────────
+  - name: CAP_3-ui-deployer
+    type: com.sap.application.content
+    path: .
     requires:
-      - name: srv-api
-        group: destinations
-        properties:
-          name: srv-api
-          strictSSL: true
-          forwardAuthToken: true
-          url: '~{srv-url}'
-      - name: CAP_3-auth
+      - name: CAP_3-html5-repo-host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: app/salesorder/dist
+      requires:
+        - artifacts:
+            - managesalesorder.salesorder.zip   # ← dots not dashes
+          name: CAP_3-ui
+          target-path: app/salesorder/dist
+
+  # ─── Approuter ────────────────────────────────────────────────────────────────
   - name: CAP_3
     type: approuter.nodejs
-    path: app/
+    path: app
     parameters:
       keep-existing-routes: true
       disk-quota: 256M
@@ -67,17 +81,22 @@ modules:
           url: '~{srv-url}'
           forwardAuthToken: true
       - name: CAP_3-auth
+      - name: CAP_3-html5-repo-runtime
     provides:
       - name: app-api
         properties:
           app-protocol: '${protocol}'
           app-uri: '${default-uri}'
+
 resources:
+  # ─── HANA HDI Container ───────────────────────────────────────────────────────
   - name: CAP_3-db
     type: com.sap.xs.hdi-container
     parameters:
       service: hana
       service-plan: hdi-shared
+
+  # ─── XSUAA ────────────────────────────────────────────────────────────────────
   - name: CAP_3-auth
     type: org.cloudfoundry.managed-service
     parameters:
@@ -95,3 +114,16 @@ resources:
             - 'https://*~{app-api/app-uri}/**'
     requires:
       - name: app-api
+
+  # ─── HTML5 Application Repository ────────────────────────────────────────────
+  - name: CAP_3-html5-repo-host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+
+  - name: CAP_3-html5-repo-runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime

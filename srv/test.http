@@ -123,7 +123,7 @@ Content-Type: application/json
 GET http://localhost:4004/CatalogService/SalesOrders
 
 ### Admin user - sees all records
-GET http://localhost:4004/CatalogService/SalesOrders/$count
+GET http://localhost:4004/CatalogService/SalesOrders
 Authorization: Basic shubham:
 
 ### Viewer user - sees only PO-9002 records

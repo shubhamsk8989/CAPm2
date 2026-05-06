@@ -6,14 +6,14 @@
       "source": "^/salesorder/webapp/(.*)$",
       "target": "$1",
       "csrfProtection": false,
-      "autheticationType": "xsuaa",
+      "authenticationType": "xsuaa",
       "localDir": "salesorder/webapp/"
     },
     {
       "source": "^/(.*)$",
       "target": "$1",
       "csrfProtection": false,
-      "autheticationType": "xsuaa",
+      "authenticationType": "xsuaa",
       "destination": "srv-api"
     }
   ]

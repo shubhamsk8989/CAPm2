@@ -32,10 +32,7 @@
     "requires": {
       "db": {
         "[development]": {
-          "kind": "sqlite",
-          "credentials": {
-            "url": "shubham.db"
-          }
+          "kind": "hana"
         },
         "[production]": {
           "kind": "hana"
